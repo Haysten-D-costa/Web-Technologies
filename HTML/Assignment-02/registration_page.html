@@ -1,8 +1,102 @@
 <html>
 <head>
-	<title>Registration Page</title>
+	<title>WebTech Assignment02 : Registration Form</title>
 </head>
-<body>
-	
+   <body style="background-color: #d3ebff">
+	<h1 align="center"><u>REGISTRATION FORM</u></h1>
+	<br><br>
+	<p>
+		Dear Parent / Guardian,<br><br>
+		Welcome to KEYS and TONES Music Academy Registration center.....<br>
+		Please use this form to register your child to our program. We need complete and accurate information about the student, so make sure you fill out all the fields.<br>
+		Registration forms are processed within 48 hours. You will receive an email with what to do next once
+		we process your application. We look forward to working with you and your student !
+	</p>
+	<form action="/" method="get" align="left" target="_blank">
+		<fieldset style="background-color: #49a4ff;">
+			<br><br>
+			<fieldset style="background-color:lightblue" id="personal-information-section">
+				<label>Name : </label><br>
+				<input type="text" id="first-name" name="first-name" placeholder="first name" size="45%" style="height:35px" autofocus required autocomplete="off">
+				<input type="text" id="last-name" name="last-name" placeholder="last name" size="44%" style="height:35px" required autocomplete="off">
+				<br><br>
+				
+				<label for="email">Email : </label><br>
+				<input type="email" id="email" name="email" placeholder="abc@gmail.com" size="95%" style="height:35px" required autocomplete="off">
+				<br><br>
+				
+				<label for="dob">Date of Birth : </label><br>
+				<input type="date" id="dob" name="dob" required>
+				<label for="age">Age : </label>
+				<input type="number" id="age" min="5" max="40" placeholder="age" disabled><br><br>
+				<label>Select preferred colors (for giveaways) : </label>
+				<input type="color" id="fav-color">
+				<br><br>
+				
+				<label>Gender : </label>
+				<input type="radio" id="male" name="gender" value="Male" checked>Male
+				<input type="radio" id="female" name="gender" value="Female">Female
+				<input type="radio" id="others" name="gender" value="Others">Others
+				<br><br>
+				
+				<label for="ph-number">Phone No. : </label><br>
+				<input type="phone" id="ph-number" placeholder="9999988888" size="95%" style="height:35px" maxlength="10" required>
+				<br><br>
+				
+				<label for="address">Address : </label><br>
+				<textarea id="address" rows="10" cols="88" placeholder="Your address here !" required autocomplete="off"></textarea>
+				<br><br>
+			</fieldset>
+			<br>
+			<fieldset style="background-color:lightblue" id="course-information-section">
+				<label>Select your level : </label>
+				<select size="1" required>
+					<option selected>Beginner</option>
+					<option>Intermediate</option>
+					<option>Advance/Professional</option>
+				</select>
+				<label>Drag as per level chosen...</label>
+				<input type="range" step="3" min="0" max="9">
+				<br><br>
+				
+				<label>Select your choices : </label>
+				<br><input type="checkbox" id="key" name="keyboard" value="Keyboard" checked>Keyboard / Piano
+				<br><input type="checkbox" id="gui" name="guitar" value="Guitar">Guitar
+				<br><input type="checkbox" id="vio" name="violin" value="Violin">Violin
+				<br><input type="checkbox" id="dru" name="drums" value="Drums">Drums / Jazz 
+				<br><input type="checkbox" id="voc" name="vocals" value="Vocals">Vocals
+				<br><br>
+				<label>Choose desired date and time of commence : </label>
+				<input type="datetime-local" id="date-time" name="date-time">
+				<br><br>
+				<label>
+					If not satisfied with the uploaded time-table, or incase of other problems with respact to the time table,<br>
+					you may choose your own days of classes....<b><i>(2 days per week...)</i></b><br>
+					<b>Timing may be confirmed later...</b>
+				</label><br><br>
+				<input type="checkbox" id="mon" name="monday" value="Monday" checked>Monday
+				<input type="checkbox" id="tue" name="tuesday" value="Tuesday" checked>Tuesday
+				<input type="checkbox" id="wed" name="wednesday" value="Wednesday">Wednesday
+				<input type="checkbox" id="thu" name="thursday" value="Thursday">Thursday
+				<input type="checkbox" id="fri" name="friday" value="Friday">Friday
+				<input type="checkbox" id="sat" name="saturday" value="Saturday">Saturday
+				
+				<br><br>
+				<label>Comments / Queries : </label><br>
+				<textarea placeholder="Get in touch and send us any of your queries or questoins, type here !!....." rows="5" cols="58"></textarea>
+				<textarea name="" id="" rows="5" cols="20" readonly>CAUTION !
+					Enter Valid and sensible content please !! Other irrelavent questions will not be entertained !! Please note,
+					THANK YOU
+				</textarea>
+				<br><br>
+				<label>Add your signature : </label><br>
+				<input type="file" id="signature" name="signature">
+			</fieldset>
+			<br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit" onsubmit="alert('Response Recorded...')">
+		</fieldset>
+		
+	</form>
 </body>
 </html>
