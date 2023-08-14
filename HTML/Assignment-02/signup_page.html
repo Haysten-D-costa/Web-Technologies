@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>WebTech Assignment 02 : Signup Form</title>
@@ -5,20 +6,57 @@
 <body style="background-color: #d3ebff" align="left">
     <h1><u>Welcome to KEYS and TONES Music Academy !</u></h1>
     <br><br><br>
-    <fieldset style="background-color: #49a4ff;">
+    <fieldset style="background-color: #49a4ff;" title="Sign Up form !">
+
         <br><br><br>
+        <label>Name : </label><br>
+        <input type="text" id="first-name" name="first-name" placeholder="first name" size="45%" style="height:35px" autofocus required autocomplete="off">
+        <input type="text" id="last-name" name="last-name" placeholder="last name" size="44%" style="height:35px" required autocomplete="off">
+        <br><br>
         <label>Username/Email : </label><br>
-        <input type="email" id="email" name="email" placeholder="enter your email here !" size="90%" style="height:35px" required autofocus autocomplete="off">
+        <input type="email" id="email" name="email" placeholder="enter your email here !" size="95%" style="height:35px" required autofocus autocomplete="off">
         <br><br>
-
         <label>Password : </label><br>
-        <input type="password" id="password" size="90%" style="height:35px" required autocomplete="off">
+        <input type="password" id="password" size="95%" style="height:35px" required autocomplete="off">
+        <br><br>
+        <label for="dob">Date of Birth : </label><br>
+        <input type="date" id="dob" name="dob" required>
+        <label for="age">Age : </label>
+        <input type="number" id="age" min="5" max="40" placeholder="age"><br><br>
+        <br>
+        <label>Gender : </label>
+        <input type="radio" id="male" name="gender" value="Male" checked>Male
+        <input type="radio" id="female" name="gender" value="Female">Female
+        <input type="radio" id="others" name="gender" value="Others">Others
+        <br><br>
+        <label for="ph-number">Phone No. : </label><br>
+        <input type="phone" id="ph-number" placeholder="9999988888" size="95%" style="height:35px" maxlength="10" required>
+        <br><br>
+        <label for="address">Address : </label><br>
+        <textarea id="address" rows="10" cols="88" placeholder="Your address here !" required autocomplete="off"></textarea>
+        <br><br>
+        <label>Select your choices : </label>
+        <br><input type="checkbox" id="eng" name="eng" value="English" checked>English.....<input type="range" step="3" min="0" max="9">
+        <br><input type="checkbox" id="konk" name="konk" value="Konkani">Konkani....<input type="range" step="3" min="0" max="9">
+        <br><input type="checkbox" id="hindi" name="hindi" value="Hindi">Hindi.........<input type="range" step="3" min="0" max="9">
+        <br><input type="checkbox" id="marathi" name="marathi" value="Marathi">Marathi.....<input type="range" step="3" min="0" max="9"> 
+        <br><input type="checkbox" id="other" name="other" value="Other">Other.........<input type="range" step="3" min="0" max="9">
+        <br><br>
+        <label>Comments / Queries : </label><br>
+        <textarea placeholder="Get in touch and send us any of your queries or questoins, type here !!....." rows="5" cols="58"></textarea>
+        <textarea name="" id="" rows="5" cols="20" readonly>CAUTION !
+            Enter Valid and sensible content please !! Other irrelavent questions will not be entertained !! Please note,
+            THANK YOU
+        </textarea>
+        <br><br>
+        <label>Add your signature : </label><br>
+        <input type="file" id="signature" name="signature">
         <br><br>
 
-        <input type="submit" value="SUBMIT">
+        <input type="reset" id="reset-button" value="RESET" >
+        <button id="login-button"><a href="../Assignment-01/index.html">LOGIN</a></button>
         <br><br><br>
 
     </fieldset>
-
 </body>
 </html>
