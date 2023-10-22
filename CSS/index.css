@@ -64,6 +64,7 @@ a:any-link {
 }
 .profile-pic {
     height: 500px;
+    width: 400px;
     margin: 0px 50px 10px ;
     border-radius: 200px;
 }
@@ -122,4 +123,12 @@ a:any-link {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.buttons {
+    width: 319px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+    color: #00ffee;
+    background-color: #04001b;
 }
