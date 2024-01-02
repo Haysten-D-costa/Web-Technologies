@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var JSONobj = '{"name":"John", "age":30, "city":"New York"}'; // String from server....
+        var JSobj = JSON.parse(JSONobj); // JSON.parse(str_obj), to convert string object to a jason object....
+
+        document.write("<br>"+ JSobj.name +" -> "+ typeof(JSobj.name));
+        document.write("<br>"+ JSobj.age);
+        document.write("<br>"+ JSobj.city);
+    </script>
+</body>
+</html>

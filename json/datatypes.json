@@ -1,0 +1,19 @@
+var strings = {
+    "fname":"Akash",
+    "branch":"Computer",
+    "city":"Mumbai"
+};
+var numbers = {
+    "age":30,
+    "marks":265,
+    "height":5.1
+};
+var boolean = {
+    "holiday":true,
+    "isAdmin":false,
+    "NRI":false
+};
+var Null = {
+    "middlename":null,
+    "salary":null
+};

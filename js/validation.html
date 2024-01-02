@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script>
+        function validate() {
+            var username = document.getElementById("un");
+            var password = document.getElementById("pw");
+            if (username.value.trim() == "") {
+                alert("username cannot be empty");
+                username.style.border = "5px solid red";
+                return false;
+            }
+    
+            else if (password.value.trim() == "") {
+                alert("password cannot be empty");
+                password.style.border = "5px solid red";
+                return false;
+            }
+            else if (password.value.trim().length < 5) {
+                alert("password has to be atleast 5 characters long");
+                password.style.border = "5px solid red";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()" action="test.html">
+        Enter Username <input type="text" id="un"> <br><br>
+        Enter Password <input type="text" id="pw"> <br><br>
+        <input type="submit"></input>
+    </form>
+</body>
+</html>

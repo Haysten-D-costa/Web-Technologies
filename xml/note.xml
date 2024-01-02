@@ -1,0 +1,33 @@
+<!--
+?    SYNTAX : 
+?    <root>
+?        <child>
+?            <subchild>.....</subchild>
+?        </child>
+?    </root>
+
+-->
+
+
+
+<note> <!-- OLD-version-->
+    <to>Rick</to>
+    <from>Timmy</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this week !</body>
+</note>
+
+<note> <!--NEW-version-->
+    <date>2015-09-01</date>
+    <time>08:30</time>
+    <to>Rick</to>
+    <from>Timmy</from>
+    <!--//<heading>Reminder</heading>-->
+    <body>Don't forget me this week !</body>
+</note>
+
+<!--
+=> Extensible property of XML,
+-i.e- the new <date>,<time> and removal of <heading> wont affect the older version of the XML document.....
+It will still work. This is EXTENSIBILITY PROPERTY.
+-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("un").value;
+            var x = /CT/;
+            if (username == "") {
+                alert("username cannot be empty");
+                return false;
+            }
+            else if (x.test(username) == false) {
+                alert("invalid username");
+                return false;
+            }
+            else {
+                return true;
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="test.html">
+        Enter Username
+        <input type="text" id="un">Invalid Username<br>
+        <input type="submit" value="Click Me">
+    </form>
+</body>
+
+</html>

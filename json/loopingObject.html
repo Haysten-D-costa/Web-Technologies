@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = '{"name":"Haysten", "age":20, "gender":"male", "friends":["Roy", "Tim", "Rick"]}';
+        const b = JSON.parse(a);
+
+        for(var x in b) {
+            document.write("<br>"+ x);
+            document.write(" "+ b[x]);
+        }
+        //! For-of loop doesnt work for JS-Objects....
+
+        document.write("<br>");
+        document.write("<br>Name : "+ b.name);
+        document.write("<br>Age  : "+ b.age);
+        document.write("<br>Gender : "+ b.gender);
+        
+        document.write("<br>Friends : ");
+        for(var i=0; i<b.friends.length; i++) {
+            document.write(" "+ b.friends[i]);
+        }
+    </script>
+</body>
+</html>

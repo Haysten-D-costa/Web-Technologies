@@ -1,0 +1,5 @@
+var a = {
+    "employee":{"name":"John", "age":30, "city":"New York"},
+    "car":{"brand":"Hyundai", "name":"i20", "color":"White"},
+    "profession":{"company":"Wipro", "salary":30000}
+};

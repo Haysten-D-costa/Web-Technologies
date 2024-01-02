@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "tvschedule.dtd">
+<TVSCHEDULE NAME="WeeklySchedule">
+    <CHANNEL CHAN="Channel1">
+        <BANNER>Welcome to Channel 1's Weekly Schedule</BANNER>
+        <DAY>
+            <DATE>2023-01-01</DATE>
+            <HOLIDAY>New Year's Day</HOLIDAY>
+        </DAY>
+        <DAY>
+            <DATE>2023-01-02</DATE>
+            <PROGRAMSLOT VTR="12345">
+                <TIME>08:00 AM</TIME>
+                <TITLE RATING="PG">Morning Show</TITLE>
+                <DESCRIPTION>Start your day with our exciting morning show!</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT VTR="67890">
+                <TIME>01:00 PM</TIME>
+                <TITLE RATING="G" LANGUAGE="English">Kids Cartoon Marathon</TITLE>
+                <DESCRIPTION>A marathon of your favorite animated cartoons for kids.</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+    <CHANNEL CHAN="Channel2">
+        <BANNER>Channel 2's Weekly Highlights</BANNER>
+        <DAY>
+            <DATE>2023-01-03</DATE>
+            <HOLIDAY/>
+            <PROGRAMSLOT VTR="54321">
+                <TIME>09:30 PM</TIME>
+                <TITLE RATING="PG-13" LANGUAGE="Spanish">Prime Time Movie</TITLE>
+                <DESCRIPTION>An action-packed movie in Spanish for the evening.</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+        <DAY>
+            <DATE>2023-01-04</DATE>
+            <PROGRAMSLOT VTR="98765">
+                <TIME>03:30 PM</TIME>
+                <TITLE>Retro TV Classics</TITLE>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT VTR="24680">
+                <TIME>08:00 PM</TIME>
+                <TITLE RATING="PG" LANGUAGE="French">Cooking Show</TITLE>
+                <DESCRIPTION>Join our chefs as they prepare delicious dishes!</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+</TVSCHEDULE>
+ 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = '{"name":"Haysten", "age":20, "gender":"male"}';
+        const b = JSON.parse(a); // converting JSON String to JS Object, using the JSON.parse() method....
+        document.write( "<br> Name is   : "+ b.name); // displaying using (.) notation....
+        document.write( "<br> Age is    : "+ b.age);
+        document.write( "<br> Gender is : "+ b.gender);
+        document.write( "<br><br> Name is   : "+ b["name"]); // displaying using ([]) notation....
+        document.write( "<br> Age is    : "+ b["age"]);
+        document.write( "<br> Gender is : "+ b["gender"]);
+
+        const c = JSON.stringify(b);
+        document.write("<br><br>"+ c);
+        document.write("<br>"+ c.length);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validate() {
+            var email = document.getElementById("em").value;
+            var x = /^([a-zA-Z0-9\.\-]+)@([a-zA-Z0-9]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/;
+            if (x.test(email) == false) {
+                document.getElementById("l1").innerHTML = "Invalid";
+                document.getElementById("l1").style.color = "red";
+            }
+            else {
+                document.getElementById("l1").innerHTML = "Valid";
+                document.getElementById("l1").style.color = "green";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Enter Email
+        <input type="text" id="em">
+        <label id="l1"></label><br>
+        <button type="button" onclick="validate()">Send</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+var p = {
+    "employees":["John", "Ana", "Peter"],
+    "marks":[85,90,45,12]
+};

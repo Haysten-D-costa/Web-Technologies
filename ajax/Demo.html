@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title></title>
+</head>
+    <body>
+        <script type="text/javascript">
+            
+            var xhr = new XMLHttpRequest(); // creating XMLHttpRequest object....
+            xhr.onload = function () { // define a callback function....
+                var ob1 = JSON.parse(xhr.responseText); // what to do....
+                document.write("<br>Id is " + ob1.id);
+                document.write("<br>First name is " + ob1.fname);
+                document.write("<br>Branch is " + ob1.branch);
+            }
+            xhr.open("GET", "Demo.json"); // send a request....
+            xhr.send();
+        </script>
+    </body>
+</html>
